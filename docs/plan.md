@@ -58,3 +58,38 @@ Cambios realizados:
 - Se usa Plus Jakarta Sans para títulos.
 - Se usa DM Sans para el texto general.
 - Se centralizó la configuración tipográfica en variables CSS.
+
+---
+
+## Versión 1.4.5 — Documentación de mejoras visuales
+
+Esta versión documenta las mejoras aplicadas a la landing page para convertirla en una página más profesional, visualmente fuerte y preparada para presentar servicios de desarrollo web.
+
+### Cambios realizados en la versión 1.4
+
+- Se agregaron fuentes profesionales para mejorar la identidad visual.
+- Se mejoró el hero con un fondo visual más atractivo usando CSS.
+- Se agregó una trust bar debajo del hero para reforzar confianza.
+- Se agregó un menú responsive tipo hamburger sin JavaScript.
+- Se agregaron iconos SVG a las tarjetas de servicios.
+- Se agregaron avatares con iniciales a los testimonios.
+- Se centralizó el espaciado de tarjetas usando variables CSS.
+
+### Archivos principales modificados
+
+- `index.html`: estructura de secciones, trust bar, menú responsive, iconos y testimonios.
+- `css/styles.css`: diseño visual, responsive, hero, tarjetas, iconos, avatares y variables de espaciado.
+- `docs/plan.md`: documentación del progreso del proyecto.
+- `README.md`: resumen actualizado del estado del proyecto.
+
+### Estado actual del proyecto
+
+La landing ya cuenta con una base visual más profesional y una estructura más preparada para seguir creciendo.
+
+Las siguientes mejoras posibles son:
+
+1. Crear un formulario de contacto real.
+2. Reemplazar el mockup decorativo del hero por un elemento HTML más detallado.
+3. Publicar la landing en GitHub Pages, Netlify o Vercel.
+4. Agregar una sección futura de proyectos o casos de estudio.
+5. Mejorar SEO con `robots.txt`, `sitemap.xml` y datos estructurados.
