@@ -40,3 +40,21 @@ Personas, negocios pequeños o emprendedores que necesitan:
 - Mantener CSS organizado.
 - Usar nombres claros de clases.
 - Crear una base profesional reutilizable.
+
+## Versión 1.4 — Identidad visual
+
+Objetivo de esta versión:
+
+- Mejorar la personalidad visual de la landing.
+- Reforzar la primera impresión del hero.
+- Agregar señales de confianza más visibles.
+- Mantener el proyecto en HTML y CSS sin JavaScript.
+
+### Fase 1: Tipografía e identidad
+
+Cambios realizados:
+
+- Se agregaron fuentes profesionales desde Google Fonts.
+- Se usa Plus Jakarta Sans para títulos.
+- Se usa DM Sans para el texto general.
+- Se centralizó la configuración tipográfica en variables CSS.
