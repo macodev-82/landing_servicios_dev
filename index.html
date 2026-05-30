@@ -1,367 +1,495 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Maahcodev | Desarrollo web profesional</title>
+    <title>Maahcodev | Desarrollo web profesional</title>
 
-  <meta
-  name="description"
-  content="Landing page profesional para ofrecer servicios de desarrollo web, automatización y soluciones digitales."
-/>
+    <meta
+      name="description"
+      content="Landing page profesional para ofrecer servicios de desarrollo web, automatización y soluciones digitales."
+    />
 
-  <meta property="og:title" content="Maahcodev | Desarrollo web profesional" />
-  <meta
-    property="og:description"
-    content="Soluciones digitales claras, modernas y enfocadas en resultados para emprendedores y negocios."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-image.svg" />
+    <meta
+      property="og:title"
+      content="Maahcodev | Desarrollo web profesional"
+    />
+    <meta
+      property="og:description"
+      content="Soluciones digitales claras, modernas y enfocadas en resultados para emprendedores y negocios."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-image.svg" />
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
-  rel="stylesheet"
-/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-</head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Navegación principal">
+        <a class="logo" href="#">Maahcodev</a>
 
-<body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navegación principal">
-      <a class="logo" href="#">Maahcodev</a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Abrir menú">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </label>
-
-      <ul class="nav-links">
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#precios">Precios</a></li>
-        <li><a href="#confianza">Confianza</a></li>
-        <li><a href="#proceso">Proceso</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Desarrollo web profesional</p>
-
-        <h1>Construyo soluciones digitales claras, rápidas y enfocadas en resultados.</h1>
-
-        <p class="hero-description">
-          Ayudo a emprendedores, negocios y profesionales a crear páginas web modernas,
-          automatizaciones simples y bases digitales listas para crecer.
-        </p>
-
-        <div class="hero-actions">
-          <a class="button button-primary" href="#contacto">Quiero una web profesional</a>
-          <a class="button button-secondary" href="#servicios">Ver servicios</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-bar" aria-label="Cómo trabajo">
-      <div class="trust-bar-inner">
-        <article class="trust-bar-item">
-          <span class="trust-bar-check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </span>
-          <div>
-            <strong class="trust-bar-title">Comunicación clara</strong>
-            <span class="trust-bar-desc">Definición y avances transparentes</span>
-          </div>
-        </article>
-        <article class="trust-bar-item">
-          <span class="trust-bar-check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </span>
-          <div>
-            <strong class="trust-bar-title">Proceso ordenado</strong>
-            <span class="trust-bar-desc">Versiones con Git, cambios claros</span>
-          </div>
-        </article>
-        <article class="trust-bar-item">
-          <span class="trust-bar-check" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </span>
-          <div>
-            <strong class="trust-bar-title">Base para crecer</strong>
-            <span class="trust-bar-desc">Estructura lista para escalar</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="servicios" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Servicios</p>
-        <h2>Qué puedo construir para ti</h2>
-        <p>
-          Servicios pensados para empezar simple, entregar valor rápido y mejorar con el tiempo.
-        </p>
-      </div>
-
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Landing pages</h3>
-          <p>
-            Páginas profesionales para presentar servicios, captar clientes y mostrar tu marca.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Sitios web base</h3>
-          <p>
-            Estructuras limpias con HTML, CSS y buenas prácticas para crecer paso a paso.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Automatización simple</h3>
-          <p>
-            Pequeñas soluciones para organizar información, formularios o tareas repetitivas.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="precios" class="section">
-    <div class="section-heading">
-      <p class="eyebrow">Precios</p>
-      <h2>Paquetes simples para empezar rápido</h2>
-      <p>
-        Elige una base según el nivel de presencia digital que necesitas.
-        Cada paquete puede adaptarse según el proyecto.
-      </p>
-  </div>
-
-  <div class="pricing-grid">
-    <article class="price-card">
-      <p class="price-label">Inicial</p>
-      <h3>Landing esencial</h3>
-      <p class="price">$250+</p>
-      <p class="price-description">
-        Ideal para presentar un servicio, una marca personal o una idea de negocio.
-      </p>
-
-      <ul class="features-list">
-        <li>Una página principal</li>
-        <li>Diseño responsive</li>
-        <li>Secciones básicas</li>
-        <li>Formulario o enlace de contacto</li>
-      </ul>
-
-      <a class="button button-secondary" href="#contacto">Elegir inicial</a>
-    </article>
-
-    <article class="price-card featured-card">
-      <p class="price-label">Recomendado</p>
-      <h3>Web profesional</h3>
-      <p class="price">$500+</p>
-      <p class="price-description">
-        Para negocios que necesitan una presencia más completa y mejor organizada.
-      </p>
-
-      <ul class="features-list">
-        <li>Landing completa</li>
-        <li>Copy mejorado</li>
-        <li>Sección de servicios</li>
-        <li>Optimización visual inicial</li>
-      </ul>
-
-      <a class="button button-primary" href="#contacto">Elegir recomendado</a>
-    </article>
-
-    <article class="price-card">
-      <p class="price-label">Avanzado</p>
-      <h3>Base digital</h3>
-      <p class="price">$900+</p>
-      <p class="price-description">
-        Para proyectos que necesitan una base más fuerte para crecer después.
-      </p>
-
-      <ul class="features-list">
-        <li>Diseño personalizado</li>
-        <li>Estructura escalable</li>
-        <li>Preparación para futuras funciones</li>
-        <li>Documentación básica</li>
-      </ul>
-
-          <a class="button button-secondary" href="#contacto">Elegir avanzado</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="confianza" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Confianza</p>
-        <h2>Una forma clara y profesional de construir tu presencia digital</h2>
-        <p>
-          Cada proyecto se trabaja con enfoque práctico, comunicación clara y una estructura pensada para crecer.
-        </p>
-    </div>
-
-  <div class="trust-grid">
-    <article class="trust-card">
-      <span class="trust-number">01</span>
-      <h3>Comunicación clara</h3>
-      <p>
-        Desde el inicio se define qué se va a construir, qué archivos se tocarán
-        y cómo se probará cada avance.
-      </p>
-    </article>
-
-    <article class="trust-card">
-      <span class="trust-number">02</span>
-      <h3>Proceso ordenado</h3>
-      <p>
-        Cada entrega se organiza por secciones, versiones y cambios guardados con Git.
-      </p>
-    </article>
-
-    <article class="trust-card">
-      <span class="trust-number">03</span>
-      <h3>Base preparada para crecer</h3>
-      <p>
-        La estructura inicial se crea pensando en futuras mejoras, nuevas páginas
-        y posibles integraciones.
-      </p>
-    </article>
-  </div>
-
-  <div class="testimonials-grid">
-    <article class="testimonial-card">
-      <p>
-        “La página quedó clara, moderna y fácil de entender. Ahora puedo presentar mi servicio con más seguridad.”
-      </p>
-
-      <div class="testimonial-author">
-        <strong>Carlos M.</strong>
-        <span>Landing page profesional</span>
-      </div>
-    </article>
-
-    <article class="testimonial-card">
-      <p>
-        “Me gustó que el proceso estuviera dividido por pasos. Sabía qué se estaba haciendo y por qué.”
-      </p>
-
-      <div class="testimonial-author">
-        <strong>Ana G.</strong>
-        <span>Presencia online inicial</span>
-      </div>
-      </article>
-      </div>
-    </section>
-
-    <section id="proceso" class="section section-muted">
-      <div class="section-heading">
-        <p class="eyebrow">Proceso</p>
-        <h2>Cómo trabajo un proyecto</h2>
-      </div>
-
-      <div class="steps">
-        <article class="step">
-          <span>01</span>
-          <h3>Entender el objetivo</h3>
-          <p>Primero definimos qué problema debe resolver la página.</p>
-        </article>
-
-        <article class="step">
-          <span>02</span>
-          <h3>Crear la estructura</h3>
-          <p>Diseñamos el contenido y las secciones principales.</p>
-        </article>
-
-        <article class="step">
-          <span>03</span>
-          <h3>Construir y mejorar</h3>
-          <p>Desarrollamos la primera versión y luego la refinamos.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="sobre-mi" class="section about-section">
-      <div>
-        <p class="eyebrow">Sobre mí</p>
-        <h2>Desarrollo con enfoque práctico y profesional</h2>
-      </div>
-
-      <p>
-        Estoy construyendo proyectos reales con una mentalidad clara:
-        aprender haciendo, producir resultados y mejorar cada entrega.
-        Mi enfoque combina fundamentos sólidos, buenas prácticas y herramientas modernas.
-      </p>
-    </section>
-
-    <section id="contacto" class="contact-section">
-  <div class="contact-layout">
-    <div class="contact-content">
-      <p class="eyebrow">Contacto</p>
-
-      <h2>Cuéntame qué necesitas construir</h2>
-
-      <p>
-        Si necesitas una landing page, una web base o una presencia digital más profesional,
-        podemos empezar con una primera versión clara, ordenada y lista para mejorar.
-      </p>
-
-      <div class="contact-actions">
-        <a
-          class="button button-primary"
-          href="mailto:maahcodev@gmail.com?subject=Consulta%20sobre%20desarrollo%20web"
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+        <label
+          for="nav-toggle"
+          class="nav-toggle-label"
+          aria-label="Abrir menú"
         >
-          Enviar email
-        </a>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </label>
 
-        <a class="button button-secondary" href="#precios">
-          Ver paquetes
-        </a>
-      </div>
-    </div>
+        <ul class="nav-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#confianza">Confianza</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <aside class="contact-panel" aria-label="Información para iniciar un proyecto">
-      <h3>Para empezar, dime:</h3>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Desarrollo web profesional</p>
 
-      <ul class="contact-list">
-        <li>Qué tipo de página o proyecto necesitas.</li>
-        <li>Cuál es el objetivo principal del sitio.</li>
-        <li>Si ya tienes textos, logo, colores o referencias.</li>
-        <li>Cuándo te gustaría tener una primera versión.</li>
-      </ul>
+          <h1>
+            Construyo soluciones digitales claras, rápidas y enfocadas en
+            resultados.
+          </h1>
 
-      <div class="contact-method">
-        <span>Email directo</span>
-        <a href="mailto:maahcodev@gmail.com">maahcodev@gmail.com</a>
-      </div>
-    </aside>
-    </div>
-  </section>
-  </main>
+          <p class="hero-description">
+            Ayudo a emprendedores, negocios y profesionales a crear páginas web
+            modernas, automatizaciones simples y bases digitales listas para
+            crecer.
+          </p>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Maahcodev. Todos los derechos reservados.</p>
-  </footer>
-</body>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contacto"
+              >Quiero una web profesional</a
+            >
+            <a class="button button-secondary" href="#servicios"
+              >Ver servicios</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar" aria-label="Cómo trabajo">
+        <div class="trust-bar-inner">
+          <article class="trust-bar-item">
+            <span class="trust-bar-check" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </span>
+            <div>
+              <strong class="trust-bar-title">Comunicación clara</strong>
+              <span class="trust-bar-desc"
+                >Definición y avances transparentes</span
+              >
+            </div>
+          </article>
+          <article class="trust-bar-item">
+            <span class="trust-bar-check" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </span>
+            <div>
+              <strong class="trust-bar-title">Proceso ordenado</strong>
+              <span class="trust-bar-desc"
+                >Versiones con Git, cambios claros</span
+              >
+            </div>
+          </article>
+          <article class="trust-bar-item">
+            <span class="trust-bar-check" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </span>
+            <div>
+              <strong class="trust-bar-title">Base para crecer</strong>
+              <span class="trust-bar-desc">Estructura lista para escalar</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Servicios</p>
+          <h2>Qué puedo construir para ti</h2>
+          <p>
+            Servicios pensados para empezar simple, entregar valor rápido y
+            mejorar con el tiempo.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <span class="service-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="4" width="18" height="14" rx="2" />
+                <path d="M8 20h8" />
+                <path d="M12 18v2" />
+              </svg>
+            </span>
+
+            <h3>Landing pages</h3>
+            <p>
+              Páginas profesionales para presentar servicios, captar clientes y
+              mostrar tu marca.
+            </p>
+          </article>
+
+          <article class="card">
+            <span
+              class="service-icon service-icon-secondary"
+              aria-hidden="true"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 5h16" />
+                <path d="M4 12h16" />
+                <path d="M4 19h10" />
+                <path d="M8 5v14" />
+              </svg>
+            </span>
+
+            <h3>Sitios web base</h3>
+            <p>
+              Estructuras limpias con HTML, CSS y buenas prácticas para crecer
+              paso a paso.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="service-icon service-icon-accent" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                width="26"
+                height="26"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 3v3" />
+                <path d="M12 18v3" />
+                <path d="M3 12h3" />
+                <path d="M18 12h3" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M16.5 7.5l2-2" />
+                <path d="M5.5 18.5l2-2" />
+                <path d="M7.5 7.5l-2-2" />
+                <path d="M18.5 18.5l-2-2" />
+              </svg>
+            </span>
+
+            <h3>Automatización simple</h3>
+            <p>
+              Pequeñas soluciones para organizar información, formularios o
+              tareas repetitivas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="precios" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Precios</p>
+          <h2>Paquetes simples para empezar rápido</h2>
+          <p>
+            Elige una base según el nivel de presencia digital que necesitas.
+            Cada paquete puede adaptarse según el proyecto.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="price-label">Inicial</p>
+            <h3>Landing esencial</h3>
+            <p class="price">$250+</p>
+            <p class="price-description">
+              Ideal para presentar un servicio, una marca personal o una idea de
+              negocio.
+            </p>
+
+            <ul class="features-list">
+              <li>Una página principal</li>
+              <li>Diseño responsive</li>
+              <li>Secciones básicas</li>
+              <li>Formulario o enlace de contacto</li>
+            </ul>
+
+            <a class="button button-secondary" href="#contacto"
+              >Elegir inicial</a
+            >
+          </article>
+
+          <article class="price-card featured-card">
+            <p class="price-label">Recomendado</p>
+            <h3>Web profesional</h3>
+            <p class="price">$500+</p>
+            <p class="price-description">
+              Para negocios que necesitan una presencia más completa y mejor
+              organizada.
+            </p>
+
+            <ul class="features-list">
+              <li>Landing completa</li>
+              <li>Copy mejorado</li>
+              <li>Sección de servicios</li>
+              <li>Optimización visual inicial</li>
+            </ul>
+
+            <a class="button button-primary" href="#contacto"
+              >Elegir recomendado</a
+            >
+          </article>
+
+          <article class="price-card">
+            <p class="price-label">Avanzado</p>
+            <h3>Base digital</h3>
+            <p class="price">$900+</p>
+            <p class="price-description">
+              Para proyectos que necesitan una base más fuerte para crecer
+              después.
+            </p>
+
+            <ul class="features-list">
+              <li>Diseño personalizado</li>
+              <li>Estructura escalable</li>
+              <li>Preparación para futuras funciones</li>
+              <li>Documentación básica</li>
+            </ul>
+
+            <a class="button button-secondary" href="#contacto"
+              >Elegir avanzado</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="confianza" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Confianza</p>
+          <h2>
+            Una forma clara y profesional de construir tu presencia digital
+          </h2>
+          <p>
+            Cada proyecto se trabaja con enfoque práctico, comunicación clara y
+            una estructura pensada para crecer.
+          </p>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card">
+            <span class="trust-number">01</span>
+            <h3>Comunicación clara</h3>
+            <p>
+              Desde el inicio se define qué se va a construir, qué archivos se
+              tocarán y cómo se probará cada avance.
+            </p>
+          </article>
+
+          <article class="trust-card">
+            <span class="trust-number">02</span>
+            <h3>Proceso ordenado</h3>
+            <p>
+              Cada entrega se organiza por secciones, versiones y cambios
+              guardados con Git.
+            </p>
+          </article>
+
+          <article class="trust-card">
+            <span class="trust-number">03</span>
+            <h3>Base preparada para crecer</h3>
+            <p>
+              La estructura inicial se crea pensando en futuras mejoras, nuevas
+              páginas y posibles integraciones.
+            </p>
+          </article>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p>
+              “La página quedó clara, moderna y fácil de entender. Ahora puedo
+              presentar mi servicio con más seguridad.”
+            </p>
+
+            <div class="testimonial-author">
+              <strong>Carlos M.</strong>
+              <span>Landing page profesional</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p>
+              “Me gustó que el proceso estuviera dividido por pasos. Sabía qué
+              se estaba haciendo y por qué.”
+            </p>
+
+            <div class="testimonial-author">
+              <strong>Ana G.</strong>
+              <span>Presencia online inicial</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="proceso" class="section section-muted">
+        <div class="section-heading">
+          <p class="eyebrow">Proceso</p>
+          <h2>Cómo trabajo un proyecto</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span>01</span>
+            <h3>Entender el objetivo</h3>
+            <p>Primero definimos qué problema debe resolver la página.</p>
+          </article>
+
+          <article class="step">
+            <span>02</span>
+            <h3>Crear la estructura</h3>
+            <p>Diseñamos el contenido y las secciones principales.</p>
+          </article>
+
+          <article class="step">
+            <span>03</span>
+            <h3>Construir y mejorar</h3>
+            <p>Desarrollamos la primera versión y luego la refinamos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="section about-section">
+        <div>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Desarrollo con enfoque práctico y profesional</h2>
+        </div>
+
+        <p>
+          Estoy construyendo proyectos reales con una mentalidad clara: aprender
+          haciendo, producir resultados y mejorar cada entrega. Mi enfoque
+          combina fundamentos sólidos, buenas prácticas y herramientas modernas.
+        </p>
+      </section>
+
+      <section id="contacto" class="contact-section">
+        <div class="contact-layout">
+          <div class="contact-content">
+            <p class="eyebrow">Contacto</p>
+
+            <h2>Cuéntame qué necesitas construir</h2>
+
+            <p>
+              Si necesitas una landing page, una web base o una presencia
+              digital más profesional, podemos empezar con una primera versión
+              clara, ordenada y lista para mejorar.
+            </p>
+
+            <div class="contact-actions">
+              <a
+                class="button button-primary"
+                href="mailto:maahcodev@gmail.com?subject=Consulta%20sobre%20desarrollo%20web"
+              >
+                Enviar email
+              </a>
+
+              <a class="button button-secondary" href="#precios">
+                Ver paquetes
+              </a>
+            </div>
+          </div>
+
+          <aside
+            class="contact-panel"
+            aria-label="Información para iniciar un proyecto"
+          >
+            <h3>Para empezar, dime:</h3>
+
+            <ul class="contact-list">
+              <li>Qué tipo de página o proyecto necesitas.</li>
+              <li>Cuál es el objetivo principal del sitio.</li>
+              <li>Si ya tienes textos, logo, colores o referencias.</li>
+              <li>Cuándo te gustaría tener una primera versión.</li>
+            </ul>
+
+            <div class="contact-method">
+              <span>Email directo</span>
+              <a href="mailto:maahcodev@gmail.com">maahcodev@gmail.com</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Maahcodev. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>

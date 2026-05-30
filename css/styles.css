@@ -375,6 +375,31 @@ h3 {
   padding: 28px;
 }
 
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.32);
+  color: var(--color-accent);
+}
+
+.service-icon-secondary {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.32);
+  color: #f59e0b;
+}
+
+.service-icon-accent {
+  background: rgba(45, 212, 191, 0.12);
+  border-color: rgba(45, 212, 191, 0.32);
+  color: #2dd4bf;
+}
+
 .card p,
 .step p,
 .about-section p {
