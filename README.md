@@ -66,3 +66,9 @@ La página incluye:
 - Preparar publicación en GitHub Pages, Netlify o Vercel.
 - Agregar `robots.txt` y `sitemap.xml`.
 - Agregar datos estructurados para SEO.
+
+## Demo en vivo
+
+La landing page está publicada en GitHub Pages:
+
+https://macodev-82.github.io/landing_servicios_dev/
