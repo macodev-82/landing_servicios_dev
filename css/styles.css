@@ -278,10 +278,6 @@ h3 {
   font-size: 0.95rem;
 }
 
-.pricing-section {
-  padding-top: 32px;
-}
-
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -343,10 +339,6 @@ h3 {
   margin-top: auto;
 }
 
-.trust-section {
-  padding-top: 32px;
-}
-
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -368,11 +360,18 @@ h3 {
 
 .trust-number {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   margin-bottom: 24px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
   color: var(--color-accent);
   font-weight: 900;
-  font-size: 0.9rem;
-  letter-spacing: 0.14em;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
 }
 
 .trust-card p {
@@ -409,6 +408,53 @@ h3 {
   font-size: 0.95rem;
 }
 
+.card,
+.price-card,
+.trust-card,
+.testimonial-card,
+.step {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover,
+.price-card:hover,
+.trust-card:hover,
+.testimonial-card:hover,
+.step:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 28px 90px rgba(15, 23, 42, 0.48);
+}
+
+.featured-card:hover {
+  transform: translateY(-14px);
+}
+
+@media (max-width: 1024px) {
+  .cards-grid,
+  .pricing-grid,
+  .trust-grid,
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-grid,
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-card {
+    transform: none;
+  }
+
+  .featured-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
 @media (max-width: 820px) {
   .navbar {
     flex-direction: column;
@@ -430,6 +476,27 @@ h3 {
   .steps,
   .about-section {
     grid-template-columns: 1fr;
+  }
+
+  .cards-grid,
+  .pricing-grid,
+  .trust-grid,
+  .testimonials-grid,
+  .steps {
+    gap: 12px;
+  }
+
+  .card,
+  .price-card,
+  .trust-card,
+  .testimonial-card,
+  .step {
+    padding: clamp(20px, 4vw, 32px);
+  }
+
+  .featured-card,
+  .featured-card:hover {
+    transform: none;
   }
 
 .featured-card {
