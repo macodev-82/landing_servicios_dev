@@ -150,47 +150,142 @@ input:focus-visible,
   pointer-events: none;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 52%;
-  right: max(24px, calc((100% - var(--container-width)) / 2));
-  width: min(34vw, 390px);
-  height: 280px;
-  transform: translateY(-50%);
-  border: 1px solid rgba(148, 163, 184, 0.22);
-  border-radius: 32px;
-  background:
-    linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.78)),
-    radial-gradient(
-      circle at 20% 20%,
-      rgba(56, 189, 248, 0.26),
-      transparent 34%
-    ),
-    radial-gradient(
-      circle at 85% 75%,
-      rgba(245, 158, 11, 0.18),
-      transparent 30%
-    );
-  box-shadow: 0 32px 100px rgba(2, 6, 23, 0.62);
-  pointer-events: none;
-}
 
 .hero-content {
+  max-width: 760px;
+}
+
+.hero-layout {
   position: relative;
   z-index: 1;
   width: min(100% - 32px, var(--container-width));
   margin: 0 auto;
-  max-width: 760px;
   padding: 112px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.65fr);
+  gap: 56px;
+  align-items: center;
 }
 
-@media (min-width: 1100px) {
-  .hero-content {
-    margin-left: max(16px, calc((100% - var(--container-width)) / 2));
-    margin-right: auto;
-  }
+.hero-preview-card {
+  position: relative;
+  padding: 28px;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 32px;
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.82)),
+    radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.22), transparent 34%),
+    radial-gradient(circle at 85% 75%, rgba(245, 158, 11, 0.16), transparent 30%);
+  box-shadow: 0 32px 100px rgba(2, 6, 23, 0.62);
+  overflow: hidden;
 }
+
+.hero-preview-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.hero-preview-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.preview-window-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.preview-window-bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(203, 213, 225, 0.55);
+}
+
+.preview-status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-muted);
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.preview-status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #22c55e;
+  box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.12);
+}
+
+.preview-command {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  background: rgba(2, 6, 23, 0.58);
+  color: var(--color-text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  margin-bottom: 12px;
+}
+
+.preview-command span {
+  color: var(--color-accent);
+}
+
+.preview-output {
+  color: #86efac;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.95rem;
+  margin-bottom: 22px;
+}
+
+.preview-deploy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: rgba(15, 23, 42, 0.6);
+  margin-bottom: 18px;
+}
+
+.preview-deploy span {
+  color: var(--color-muted);
+}
+
+.preview-deploy strong {
+  color: #86efac;
+}
+
+.preview-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preview-stack span {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+
 
 .eyebrow {
   color: var(--color-accent);
@@ -694,6 +789,17 @@ h3 {
 }
 
 @media (max-width: 1024px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-preview-card {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 1024px) {
   .cards-grid,
   .pricing-grid,
   .trust-grid,
@@ -794,12 +900,16 @@ h3 {
     min-height: auto;
   }
 
-  .hero::after {
-    display: none;
+  .hero-layout {
+    padding: 72px 0;
   }
 
   .hero-content {
-    padding: 72px 0;
+    padding: 0;
+  }
+
+  .hero-preview-card {
+    padding: 22px;
   }
 
   .contact-actions .button {
