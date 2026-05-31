@@ -503,5 +503,17 @@
     <footer class="site-footer">
       <p>&copy; 2026 Maahcodev. Todos los derechos reservados.</p>
     </footer>
-  </body>
+    <script>
+    const navToggle = document.querySelector("#nav-toggle");
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        if (navToggle) {
+          navToggle.checked = false;
+        }
+      });
+    });
+  </script>
+</body>
 </html>
