@@ -47,6 +47,15 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.nav-toggle-label:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
 .site-header {
   position: sticky;
   top: 0;
